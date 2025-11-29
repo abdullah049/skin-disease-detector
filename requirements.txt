@@ -1,6 +1,6 @@
 Flask==3.0.3
 flask-cors==4.0.1
-tensorflow  # No version: Installs latest stable 2.20.0
-numpy==1.26.4
+tensorflow  # Latest 2.20.0 (no pin; installs NumPy 2.0+ automatically)
+numpy>=2.0.0,<2.2.0  # Compatible with TF 2.20.0 (avoids conflicts)
 Pillow==10.4.0
 gunicorn==23.0.0
